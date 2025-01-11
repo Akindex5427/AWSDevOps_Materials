@@ -1,5 +1,6 @@
-make a directory in your EC2 instance containing your application, and perform the following
-tasks.
+make a directory in your EC2 instance containing your application
+connect your AWS to the EC2 instance by running "aws configure" within that directory
+and perform the following tasks.
 
 CODE
 docker tag <image_name> <image_URI>
