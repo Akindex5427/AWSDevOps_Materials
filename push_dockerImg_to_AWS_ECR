@@ -1,0 +1,7 @@
+make a directory in your EC2 instance containing your application, and perform the following
+tasks.
+
+CODE
+docker tag <image_name> <image_URI>
+
+<image_URI> can be gotten after you have created the container registry on AWS
