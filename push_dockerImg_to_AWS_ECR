@@ -4,7 +4,7 @@ and perform the following tasks.
 
 CODE
 docker tag <image_name> <REPOSITORY_URI>
-<Contaie_URI> can be gotten after you have created the container registry on AWS
+<REPOSITORY_URI> can be gotten after you have created the registry on AWS
 
 Then run
 aws ecr get-login --no-include-email # this will generate a login detail.
