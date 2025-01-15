@@ -1,24 +1,7 @@
-make a directory in your EC2 instance containing your application
-connect your AWS to the EC2 instance by running "aws configure" within that directory
-and perform the following tasks.
-
-CODE
-docker tag <image_name> <REPOSITORY_URI>
-<REPOSITORY_URI> can be gotten after you have created the registry on AWS
-
-Then run
-aws ecr get-login --no-include-email # this will generate a login detail.
-Copy all the very login detail
-paste it in the next line of your linux environment where you are 
-currently working, and press ENTER. If you see "Login Succeeded".
-
-Then, navigate to your code project folder and run, 
-DOCKER_BUILDKIT=1 docker build -t <REPOSITORY/IMAGE NAME> .
-<REPOSITORY/IMAGE NAME> should be the name of your AWS ECReopsitory so
-the image can be pushed successfully  
-
-Then run
-docker tag <REPOSITORY NAME>:latest <REPOSITORY URI>
-
-Then run
-docker push <REPOSIROTY URI>
+Create a repository on AWS
+You can decide to create a user with ECR permission assigned to generate Secrete and Access key
+On your ec2 instande, run AWS configure
+Use the Access and Secrete key of the user you created
+Then, on AWS repository you created, click the Repository name, which takes you inside the Repository
+Click the "View Push Command" button on the top right of the page you are.
+Follow the steps one after the other. It is very straightforward!
